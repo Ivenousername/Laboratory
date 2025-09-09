@@ -2,8 +2,25 @@
 //
 
 #include <iostream>
-
+#include "Matrix.h"
+#include "Bruteforce.h"
+#include <chrono>
 int main()
 {
-    std::cout << "Hello World!\n";//f
+	using namespace std;
+	chrono::high_resolution_clock::time_point timeStart = std::chrono::high_resolution_clock::now();
+	int n = 6;
+	int* currentPerm = new int[n] {6,5,4,3,1,2};
+	nextPermutation(currentPerm, n);
+
+	for (int i = 0; i < n; i++) {
+		cout << currentPerm[i] << ' ';
+	}
+	cout << endl;
+
+
+	chrono::high_resolution_clock::time_point timeEnd = std::chrono::high_resolution_clock::now();
+
+	chrono::duration<double> duration = timeEnd - timeStart;
+	cout << duration.count() << " seconds" << std::endl;
 }
