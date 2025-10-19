@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3d7d6e92-6442-47cb-8020-2c058f4eda64}</ProjectGuid>
+    <ProjectGuid>{db31b386-d640-4b32-b727-6db30ffeacb7}</ProjectGuid>
     <RootNamespace>OOP1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,10 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="OOP_1.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="СStr.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="СStr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
